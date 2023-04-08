@@ -1,0 +1,1162 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+  	<meta charset="utf-8">
+  	<meta name="description" content="Your description goes here">
+  	<meta name="keywords" content="one, two, three">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<title>Sunrise-Sunset</title>
+
+		<!-- external CSS link -->
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+
+		<h1>What are the Coordinates?</h1>
+		<input class="latitude" type="text" name="latitude" value="" placeholder="latitude">
+		<input class="longitude" type="text" name="longitude" value="" placeholder="longitude">
+
+		<button type="button" name="Coordinates">Submit</button>
+
+		<h2 class="sunrise">Sunrise</h2>
+		<h2 class="sunset">Sunset</h2>
+		<img src="" alt="">
+		<h3></h3>
+		<h6>Brought to you thanks to: <a href="https://sunrise-sunset.org/api">Sunrise-Sunset</a></h6>
+
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+	<table cellspacing="0" style="margin-left: auto;margin-right: auto;">
+		<col />
+		<col width="226" />
+		<col width="174" />
+		<thead>
+			<tr>
+				<th>
+					<p class="TableHeader" style="text-align: center;">Windows Time Zone Name</p>
+				</th>
+				<th>
+					<p class="TableHeader" style="text-align: center;">Standard Time Zone Name</p>
+				</th>
+				<th>
+					<p class="TableHeader" style="text-align: center;">Abbreviation (Displayed in Meridium APM)</p>
+				</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class="t2Row" style="height: 15.0pt;">
+				<td height="20">
+					<p>(UTC) Casablanca</p>
+				</td>
+				<td>
+					<p>Morocco Standard Time</p>
+				</td>
+				<td>
+					<p>MST</p>
+				</td>
+			</tr>
+			<tr class="t1Row" style="height: 15.0pt;">
+				<td height="20">
+					<p>(UTC) Coordinated Universal Time</p>
+				</td>
+				<td>
+					<p>Coordinated Universal Time</p>
+				</td>
+				<td>
+					<p>CUT</p>
+				</td>
+			</tr>
+			<tr class="t2Row" style="height: 15.0pt;">
+				<td height="20">
+					<p>(UTC) Dublin, Edinburgh, Lisbon, London</p>
+				</td>
+				<td>
+					<p>GMT Standard Time</p>
+				</td>
+				<td>
+					<p>GST</p>
+				</td>
+			</tr>
+			<tr class="t1Row" style="height: 15.0pt;">
+				<td height="20">
+					<p>(UTC) Monrovia, Reykjavik</p>
+				</td>
+				<td>
+					<p>Greenwich Standard Time</p>
+				</td>
+				<td>
+					<p>GST</p>
+				</td>
+			</tr>
+			<tr class="t2Row" style="height: 15.0pt;">
+				<td height="20">
+					<p>(UTC+01:00) Amsterdam, Berlin, Bern, Rome, Stockholm, Vienna</p>
+				</td>
+				<td>
+					<p>W. Europe Standard Time</p>
+				</td>
+				<td>
+					<p>WEST</p>
+				</td>
+			</tr>
+			<tr class="t1Row" style="height: 15.0pt;">
+				<td height="20">
+					<p>(UTC+01:00) Belgrade, Bratislava, Budapest, Ljubljana, Prague</p>
+				</td>
+				<td>
+					<p>Central Europe Standard Time</p>
+				</td>
+				<td>
+					<p>CEST</p>
+				</td>
+			</tr>
+			<tr class="t2Row" style="height: 15.0pt;">
+				<td height="20">
+					<p>(UTC+01:00) Brussels, Copenhagen, Madrid, Paris</p>
+				</td>
+				<td>
+					<p>Romance Standard Time</p>
+				</td>
+				<td>
+					<p>RST</p>
+				</td>
+			</tr>
+			<tr class="t1Row" style="height: 15.0pt;">
+				<td height="20">
+					<p>(UTC+01:00) Sarajevo, Skopje, Warsaw, Zagreb</p>
+				</td>
+				<td>
+					<p>Central European Standard Time</p>
+				</td>
+				<td>
+					<p>CEST</p>
+				</td>
+			</tr>
+			<tr class="t2Row" style="height: 15.0pt;">
+				<td height="20">
+					<p>(UTC+01:00) West Central Africa</p>
+				</td>
+				<td>
+					<p>W. Central Africa Standard Time</p>
+				</td>
+				<td>
+					<p>WCAST</p>
+				</td>
+			</tr>
+			<tr class="t1Row" style="height: 15.0pt;">
+				<td height="20">
+					<p>(UTC+01:00) Windhoek</p>
+				</td>
+				<td>
+					<p>Namibia Standard Time</p>
+				</td>
+				<td>
+					<p>NST</p>
+				</td>
+			</tr>
+			<tr class="t2Row" style="height: 15.0pt;">
+				<td height="20">
+					<p>(UTC+02:00) Amman</p>
+				</td>
+				<td>
+					<p>Jordan Standard Time</p>
+				</td>
+				<td>
+					<p>JST</p>
+				</td>
+			</tr>
+			<tr class="t1Row" style="height: 15.0pt;">
+				<td height="20">
+					<p>(UTC+02:00) Athens, Bucharest</p>
+				</td>
+				<td>
+					<p>GTB Standard Time</p>
+				</td>
+				<td>
+					<p>GST</p>
+				</td>
+			</tr>
+			<tr class="t2Row" style="height: 15.0pt;">
+				<td height="20">
+					<p>(UTC+02:00) Beirut</p>
+				</td>
+				<td>
+					<p>Middle East Standard Time</p>
+				</td>
+				<td>
+					<p>MEST</p>
+				</td>
+			</tr>
+			<tr class="t1Row" style="height: 15.0pt;">
+				<td height="20">
+					<p>(UTC+02:00) Cairo</p>
+				</td>
+				<td>
+					<p>Egypt Standard Time</p>
+				</td>
+				<td>
+					<p>EST</p>
+				</td>
+			</tr>
+			<tr class="t2Row" style="height: 15.0pt;">
+				<td height="20">
+					<p>(UTC+02:00) Damascus</p>
+				</td>
+				<td>
+					<p>Syria Standard Time</p>
+				</td>
+				<td>
+					<p>SST</p>
+				</td>
+			</tr>
+			<tr class="t1Row" style="height: 15.0pt;">
+				<td height="20">
+					<p>(UTC+02:00) Harare, Pretoria</p>
+				</td>
+				<td>
+					<p>South Africa Standard Time</p>
+				</td>
+				<td>
+					<p>SAST</p>
+				</td>
+			</tr>
+			<tr class="t2Row" style="height: 15.0pt;">
+				<td height="20">
+					<p>(UTC+02:00) Helsinki, Kyiv, Riga, Sofia, Tallinn, Vilnius</p>
+				</td>
+				<td>
+					<p>FLE Standard Time</p>
+				</td>
+				<td>
+					<p>FST</p>
+				</td>
+			</tr>
+			<tr class="t1Row" style="height: 15.0pt;">
+				<td height="20">
+					<p>(UTC+02:00) Istanbul</p>
+				</td>
+				<td>
+					<p>Turkey Standard Time</p>
+				</td>
+				<td>
+					<p>TST</p>
+				</td>
+			</tr>
+			<tr class="t2Row" style="height: 15.0pt;">
+				<td height="20">
+					<p>(UTC+02:00) Jerusalem</p>
+				</td>
+				<td>
+					<p>Jerusalem Standard Time</p>
+				</td>
+				<td>
+					<p>JST</p>
+				</td>
+			</tr>
+			<tr class="t1Row" style="height: 15.0pt;">
+				<td height="20">
+					<p>(UTC+02:00) Nicosia</p>
+				</td>
+				<td>
+					<p>E. Europe Standard Time</p>
+				</td>
+				<td>
+					<p>EEST</p>
+				</td>
+			</tr>
+			<tr class="t2Row" style="height: 15.0pt;">
+				<td height="20">
+					<p>(UTC+03:00) Baghdad</p>
+				</td>
+				<td>
+					<p>Arabic Standard Time</p>
+				</td>
+				<td>
+					<p>AST</p>
+				</td>
+			</tr>
+			<tr class="t1Row" style="height: 15.0pt;">
+				<td height="20">
+					<p>(UTC+03:00) Kaliningrad, Minsk</p>
+				</td>
+				<td>
+					<p>Kaliningrad Standard Time</p>
+				</td>
+				<td>
+					<p>KST</p>
+				</td>
+			</tr>
+			<tr class="t2Row" style="height: 15.0pt;">
+				<td height="20">
+					<p>(UTC+03:00) Kuwait, Riyadh</p>
+				</td>
+				<td>
+					<p>Arab Standard Time</p>
+				</td>
+				<td>
+					<p>AST</p>
+				</td>
+			</tr>
+			<tr class="t1Row" style="height: 15.0pt;">
+				<td height="20">
+					<p>(UTC+03:00) Nairobi</p>
+				</td>
+				<td>
+					<p>E. Africa Standard Time</p>
+				</td>
+				<td>
+					<p>EAST</p>
+				</td>
+			</tr>
+			<tr class="t2Row" style="height: 15.0pt;">
+				<td height="20">
+					<p>(UTC+03:30) Tehran</p>
+				</td>
+				<td>
+					<p>Iran Standard Time</p>
+				</td>
+				<td>
+					<p>IST</p>
+				</td>
+			</tr>
+			<tr class="t1Row" style="height: 15.0pt;">
+				<td height="20">
+					<p>(UTC+04:00) Abu Dhabi, Muscat</p>
+				</td>
+				<td>
+					<p>Arabian Standard Time</p>
+				</td>
+				<td>
+					<p>AST</p>
+				</td>
+			</tr>
+			<tr class="t2Row" style="height: 15.0pt;">
+				<td height="20">
+					<p>(UTC+04:00) Baku</p>
+				</td>
+				<td>
+					<p>Azerbaijan Standard Time</p>
+				</td>
+				<td>
+					<p>AST</p>
+				</td>
+			</tr>
+			<tr class="t1Row" style="height: 15.0pt;">
+				<td height="20">
+					<p>(UTC+04:00) Moscow, St. Petersburg, Volgograd</p>
+				</td>
+				<td>
+					<p>Russian Standard Time</p>
+				</td>
+				<td>
+					<p>RST</p>
+				</td>
+			</tr>
+			<tr class="t2Row" style="height: 15.0pt;">
+				<td height="20">
+					<p>(UTC+04:00) Port Louis</p>
+				</td>
+				<td>
+					<p>Mauritius Standard Time</p>
+				</td>
+				<td>
+					<p>MST</p>
+				</td>
+			</tr>
+			<tr class="t1Row" style="height: 15.0pt;">
+				<td height="20">
+					<p>(UTC+04:00) Tbilisi</p>
+				</td>
+				<td>
+					<p>Georgian Standard Time</p>
+				</td>
+				<td>
+					<p>GST</p>
+				</td>
+			</tr>
+			<tr class="t2Row" style="height: 15.0pt;">
+				<td height="20">
+					<p>(UTC+04:00) Yerevan</p>
+				</td>
+				<td>
+					<p>Caucasus Standard Time</p>
+				</td>
+				<td>
+					<p>CST</p>
+				</td>
+			</tr>
+			<tr class="t1Row" style="height: 15.0pt;">
+				<td height="20">
+					<p>(UTC+04:30) Kabul</p>
+				</td>
+				<td>
+					<p>Afghanistan Standard Time</p>
+				</td>
+				<td>
+					<p>AST</p>
+				</td>
+			</tr>
+			<tr class="t2Row" style="height: 15.0pt;">
+				<td height="20">
+					<p>(UTC+05:00) Islamabad, Karachi</p>
+				</td>
+				<td>
+					<p>Pakistan Standard Time</p>
+				</td>
+				<td>
+					<p>PST</p>
+				</td>
+			</tr>
+			<tr class="t1Row" style="height: 15.0pt;">
+				<td height="20">
+					<p>(UTC+05:00) Tashkent</p>
+				</td>
+				<td>
+					<p>West Asia Standard Time</p>
+				</td>
+				<td>
+					<p>WAST</p>
+				</td>
+			</tr>
+			<tr class="t2Row" style="height: 15.0pt;">
+				<td height="20">
+					<p>(UTC+05:30) Chennai, Kolkata, Mumbai, New Delhi</p>
+				</td>
+				<td>
+					<p>India Standard Time</p>
+				</td>
+				<td>
+					<p>IST</p>
+				</td>
+			</tr>
+			<tr class="t1Row" style="height: 15.0pt;">
+				<td height="20">
+					<p>(UTC+05:30) Sri Jayawardenepura</p>
+				</td>
+				<td>
+					<p>Sri Lanka Standard Time</p>
+				</td>
+				<td>
+					<p>SLST</p>
+				</td>
+			</tr>
+			<tr class="t2Row" style="height: 15.0pt;">
+				<td height="20">
+					<p>(UTC+05:45) Kathmandu</p>
+				</td>
+				<td>
+					<p>Nepal Standard Time</p>
+				</td>
+				<td>
+					<p>NST</p>
+				</td>
+			</tr>
+			<tr class="t1Row" style="height: 15.0pt;">
+				<td height="20">
+					<p>(UTC+06:00) Astana</p>
+				</td>
+				<td>
+					<p>Central Asia Standard Time</p>
+				</td>
+				<td>
+					<p>CAST</p>
+				</td>
+			</tr>
+			<tr class="t2Row" style="height: 15.0pt;">
+				<td height="20">
+					<p>(UTC+06:00) Dhaka</p>
+				</td>
+				<td>
+					<p>Bangladesh Standard Time</p>
+				</td>
+				<td>
+					<p>BST</p>
+				</td>
+			</tr>
+			<tr class="t1Row" style="height: 15.0pt;">
+				<td height="20">
+					<p>(UTC+06:00) Ekaterinburg</p>
+				</td>
+				<td>
+					<p>Ekaterinburg Standard Time</p>
+				</td>
+				<td>
+					<p>EST</p>
+				</td>
+			</tr>
+			<tr class="t2Row" style="height: 15.0pt;">
+				<td height="20">
+					<p>(UTC+06:30) Yangon (Rangoon)</p>
+				</td>
+				<td>
+					<p>Myanmar Standard Time</p>
+				</td>
+				<td>
+					<p>MST</p>
+				</td>
+			</tr>
+			<tr class="t1Row" style="height: 15.0pt;">
+				<td height="20">
+					<p>(UTC+07:00) Bangkok, Hanoi, Jakarta</p>
+				</td>
+				<td>
+					<p>SE Asia Standard Time</p>
+				</td>
+				<td>
+					<p>SAST</p>
+				</td>
+			</tr>
+			<tr class="t2Row" style="height: 15.0pt;">
+				<td height="20">
+					<p>(UTC+07:00) Novosibirsk</p>
+				</td>
+				<td>
+					<p>N. Central Asia Standard Time</p>
+				</td>
+				<td>
+					<p>NCAST</p>
+				</td>
+			</tr>
+			<tr class="t1Row" style="height: 15.0pt;">
+				<td height="20">
+					<p>(UTC+08:00) Beijing, Chongqing, Hong Kong, Urumqi</p>
+				</td>
+				<td>
+					<p>China Standard Time</p>
+				</td>
+				<td>
+					<p>CST</p>
+				</td>
+			</tr>
+			<tr class="t2Row" style="height: 15.0pt;">
+				<td height="20">
+					<p>(UTC+08:00) Krasnoyarsk</p>
+				</td>
+				<td>
+					<p>North Asia Standard Time</p>
+				</td>
+				<td>
+					<p>NAST</p>
+				</td>
+			</tr>
+			<tr class="t1Row" style="height: 15.0pt;">
+				<td height="20">
+					<p>(UTC+08:00) Kuala Lumpur, Singapore</p>
+				</td>
+				<td>
+					<p>Malay Peninsula Standard Time</p>
+				</td>
+				<td>
+					<p>MPST</p>
+				</td>
+			</tr>
+			<tr class="t2Row" style="height: 15.0pt;">
+				<td height="20">
+					<p>(UTC+08:00) Perth</p>
+				</td>
+				<td>
+					<p>W. Australia Standard Time</p>
+				</td>
+				<td>
+					<p>WAST</p>
+				</td>
+			</tr>
+			<tr class="t1Row" style="height: 15.0pt;">
+				<td height="20">
+					<p>(UTC+08:00) Taipei</p>
+				</td>
+				<td>
+					<p>Taipei Standard Time</p>
+				</td>
+				<td>
+					<p>TST</p>
+				</td>
+			</tr>
+			<tr class="t2Row" style="height: 15.0pt;">
+				<td height="20">
+					<p>(UTC+08:00) Ulaanbaatar</p>
+				</td>
+				<td>
+					<p>Ulaanbaatar Standard Time</p>
+				</td>
+				<td>
+					<p>UST</p>
+				</td>
+			</tr>
+			<tr class="t1Row" style="height: 15.0pt;">
+				<td height="20">
+					<p>(UTC+09:00) Irkutsk</p>
+				</td>
+				<td>
+					<p>North Asia East Standard Time</p>
+				</td>
+				<td>
+					<p>NAEST</p>
+				</td>
+			</tr>
+			<tr class="t2Row" style="height: 15.0pt;">
+				<td height="20">
+					<p>(UTC+09:00) Osaka, Sapporo, Tokyo</p>
+				</td>
+				<td>
+					<p>Tokyo Standard Time</p>
+				</td>
+				<td>
+					<p>TST</p>
+				</td>
+			</tr>
+			<tr class="t1Row" style="height: 15.0pt;">
+				<td height="20">
+					<p>(UTC+09:00) Seoul</p>
+				</td>
+				<td>
+					<p>Korea Standard Time</p>
+				</td>
+				<td>
+					<p>KST</p>
+				</td>
+			</tr>
+			<tr class="t2Row" style="height: 15.0pt;">
+				<td height="20">
+					<p>(UTC+09:30) Adelaide</p>
+				</td>
+				<td>
+					<p>Cen. Australia Standard Time</p>
+				</td>
+				<td>
+					<p>CAST</p>
+				</td>
+			</tr>
+			<tr class="t1Row" style="height: 15.0pt;">
+				<td height="20">
+					<p>(UTC+09:30) Darwin</p>
+				</td>
+				<td>
+					<p>AUS Central Standard Time</p>
+				</td>
+				<td>
+					<p>ACST</p>
+				</td>
+			</tr>
+			<tr class="t2Row" style="height: 15.0pt;">
+				<td height="20">
+					<p>(UTC+10:00) Brisbane</p>
+				</td>
+				<td>
+					<p>E. Australia Standard Time</p>
+				</td>
+				<td>
+					<p>EAST</p>
+				</td>
+			</tr>
+			<tr class="t1Row" style="height: 15.0pt;">
+				<td height="20">
+					<p>(UTC+10:00) Canberra, Melbourne, Sydney</p>
+				</td>
+				<td>
+					<p>AUS Eastern Standard Time</p>
+				</td>
+				<td>
+					<p>AEST</p>
+				</td>
+			</tr>
+			<tr class="t2Row" style="height: 15.0pt;">
+				<td height="20">
+					<p>(UTC+10:00) Guam, Port Moresby</p>
+				</td>
+				<td>
+					<p>West Pacific Standard Time</p>
+				</td>
+				<td>
+					<p>WPST</p>
+				</td>
+			</tr>
+			<tr class="t1Row" style="height: 15.0pt;">
+				<td height="20">
+					<p>(UTC+10:00) Hobart</p>
+				</td>
+				<td>
+					<p>Tasmania Standard Time</p>
+				</td>
+				<td>
+					<p>TST</p>
+				</td>
+			</tr>
+			<tr class="t2Row" style="height: 15.0pt;">
+				<td height="20">
+					<p>(UTC+10:00) Yakutsk</p>
+				</td>
+				<td>
+					<p>Yakutsk Standard Time</p>
+				</td>
+				<td>
+					<p>YST</p>
+				</td>
+			</tr>
+			<tr class="t1Row" style="height: 15.0pt;">
+				<td height="20">
+					<p>(UTC+11:00) Solomon Is., New Caledonia</p>
+				</td>
+				<td>
+					<p>Central Pacific Standard Time</p>
+				</td>
+				<td>
+					<p>CPST</p>
+				</td>
+			</tr>
+			<tr class="t2Row" style="height: 15.0pt;">
+				<td height="20">
+					<p>(UTC+11:00) Vladivostok</p>
+				</td>
+				<td>
+					<p>Vladivostok Standard Time</p>
+				</td>
+				<td>
+					<p>VST</p>
+				</td>
+			</tr>
+			<tr class="t1Row" style="height: 15.0pt;">
+				<td height="20">
+					<p>(UTC+12:00) Auckland, Wellington</p>
+				</td>
+				<td>
+					<p>New Zealand Standard Time</p>
+				</td>
+				<td>
+					<p>NZST</p>
+				</td>
+			</tr>
+			<tr class="t2Row" style="height: 15.0pt;">
+				<td height="20">
+					<p>(UTC+12:00) Coordinated Universal Time+12</p>
+				</td>
+				<td>
+					<p>UTC+12</p>
+				</td>
+				<td>
+					<p>U</p>
+				</td>
+			</tr>
+			<tr class="t1Row" style="height: 15.0pt;">
+				<td height="20">
+					<p>(UTC+12:00) Fiji</p>
+				</td>
+				<td>
+					<p>Fiji Standard Time</p>
+				</td>
+				<td>
+					<p>FST</p>
+				</td>
+			</tr>
+			<tr class="t2Row" style="height: 15.0pt;">
+				<td height="20">
+					<p>(UTC+12:00) Magadan</p>
+				</td>
+				<td>
+					<p>Magadan Standard Time</p>
+				</td>
+				<td>
+					<p>MST</p>
+				</td>
+			</tr>
+			<tr class="t1Row" style="height: 15.0pt;">
+				<td height="20">
+					<p>(UTC+12:00) Petropavlovsk-Kamchatsky - Old</p>
+				</td>
+				<td>
+					<p>Kamchatka Standard Time</p>
+				</td>
+				<td>
+					<p>KST</p>
+				</td>
+			</tr>
+			<tr class="t2Row" style="height: 15.0pt;">
+				<td height="20">
+					<p>(UTC+13:00) Nuku'alofa</p>
+				</td>
+				<td>
+					<p>Tonga Standard Time</p>
+				</td>
+				<td>
+					<p>TST</p>
+				</td>
+			</tr>
+			<tr class="t1Row" style="height: 15.0pt;">
+				<td height="20">
+					<p>(UTC+13:00) Samoa</p>
+				</td>
+				<td>
+					<p>Samoa Standard Time</p>
+				</td>
+				<td>
+					<p>SST</p>
+				</td>
+			</tr>
+			<tr class="t2Row" style="height: 15.0pt;">
+				<td height="20">
+					<p>(UTC-01:00) Azores</p>
+				</td>
+				<td>
+					<p>Azores Standard Time</p>
+				</td>
+				<td>
+					<p>AST</p>
+				</td>
+			</tr>
+			<tr class="t1Row" style="height: 15.0pt;">
+				<td height="20">
+					<p>(UTC-01:00) Cape Verde Is.</p>
+				</td>
+				<td>
+					<p>Cape Verde Standard Time</p>
+				</td>
+				<td>
+					<p>CVST</p>
+				</td>
+			</tr>
+			<tr class="t2Row" style="height: 15.0pt;">
+				<td height="20">
+					<p>(UTC-02:00) Coordinated Universal Time-02</p>
+				</td>
+				<td>
+					<p>UTC-02</p>
+				</td>
+				<td>
+					<p>U</p>
+				</td>
+			</tr>
+			<tr class="t1Row" style="height: 15.0pt;">
+				<td height="20">
+					<p>(UTC-02:00) Mid-Atlantic</p>
+				</td>
+				<td>
+					<p>Mid-Atlantic Standard Time</p>
+				</td>
+				<td>
+					<p>MST</p>
+				</td>
+			</tr>
+			<tr class="t2Row" style="height: 15.0pt;">
+				<td height="20">
+					<p>(UTC-03:00) Brasilia</p>
+				</td>
+				<td>
+					<p>E. South America Standard Time</p>
+				</td>
+				<td>
+					<p>ESAST</p>
+				</td>
+			</tr>
+			<tr class="t1Row" style="height: 15.0pt;">
+				<td height="20">
+					<p>(UTC-03:00) Buenos Aires</p>
+				</td>
+				<td>
+					<p>Argentina Standard Time</p>
+				</td>
+				<td>
+					<p>AST</p>
+				</td>
+			</tr>
+			<tr class="t2Row" style="height: 15.0pt;">
+				<td height="20">
+					<p>(UTC-03:00) Cayenne, Fortaleza</p>
+				</td>
+				<td>
+					<p>SA Eastern Standard Time</p>
+				</td>
+				<td>
+					<p>SEST</p>
+				</td>
+			</tr>
+			<tr class="t1Row" style="height: 15.0pt;">
+				<td height="20">
+					<p>(UTC-03:00) Greenland</p>
+				</td>
+				<td>
+					<p>Greenland Standard Time</p>
+				</td>
+				<td>
+					<p>GST</p>
+				</td>
+			</tr>
+			<tr class="t2Row" style="height: 15.0pt;">
+				<td height="20">
+					<p>(UTC-03:00) Montevideo</p>
+				</td>
+				<td>
+					<p>Montevideo Standard Time</p>
+				</td>
+				<td>
+					<p>MST</p>
+				</td>
+			</tr>
+			<tr class="t1Row" style="height: 15.0pt;">
+				<td height="20">
+					<p>(UTC-03:00) Salvador</p>
+				</td>
+				<td>
+					<p>Bahia Standard Time</p>
+				</td>
+				<td>
+					<p>BST</p>
+				</td>
+			</tr>
+			<tr class="t2Row" style="height: 15.0pt;">
+				<td height="20">
+					<p>(UTC-03:30) Newfoundland</p>
+				</td>
+				<td>
+					<p>Newfoundland Standard Time</p>
+				</td>
+				<td>
+					<p>NST</p>
+				</td>
+			</tr>
+			<tr class="t1Row" style="height: 15.0pt;">
+				<td height="20">
+					<p>(UTC-04:00) Asuncion</p>
+				</td>
+				<td>
+					<p>Paraguay Standard Time</p>
+				</td>
+				<td>
+					<p>PST</p>
+				</td>
+			</tr>
+			<tr class="t2Row" style="height: 15.0pt;">
+				<td height="20">
+					<p>(UTC-04:00) Atlantic Time (Canada)</p>
+				</td>
+				<td>
+					<p>Atlantic Standard Time</p>
+				</td>
+				<td>
+					<p>AST</p>
+				</td>
+			</tr>
+			<tr class="t1Row" style="height: 15.0pt;">
+				<td height="20">
+					<p>(UTC-04:00) Cuiaba</p>
+				</td>
+				<td>
+					<p>Central Brazilian Standard Time</p>
+				</td>
+				<td>
+					<p>CBST</p>
+				</td>
+			</tr>
+			<tr class="t2Row" style="height: 15.0pt;">
+				<td height="20">
+					<p>(UTC-04:00) Georgetown, La Paz, Manaus, San Juan</p>
+				</td>
+				<td>
+					<p>SA Western Standard Time</p>
+				</td>
+				<td>
+					<p>SWST</p>
+				</td>
+			</tr>
+			<tr class="t1Row" style="height: 15.0pt;">
+				<td height="20">
+					<p>(UTC-04:00) Santiago</p>
+				</td>
+				<td>
+					<p>Pacific SA Standard Time</p>
+				</td>
+				<td>
+					<p>PSST</p>
+				</td>
+			</tr>
+			<tr class="t2Row" style="height: 15.0pt;">
+				<td height="20">
+					<p>(UTC-04:30) Caracas</p>
+				</td>
+				<td>
+					<p>Venezuela Standard Time</p>
+				</td>
+				<td>
+					<p>VST</p>
+				</td>
+			</tr>
+			<tr class="t1Row" style="height: 15.0pt;">
+				<td height="20">
+					<p>(UTC-05:00) Bogota, Lima, Quito</p>
+				</td>
+				<td>
+					<p>SA Pacific Standard Time</p>
+				</td>
+				<td>
+					<p>SPST</p>
+				</td>
+			</tr>
+			<tr class="t2Row" style="height: 15.0pt;">
+				<td height="20">
+					<p>(UTC-05:00) Eastern Time (US &amp; Canada)</p>
+				</td>
+				<td>
+					<p>Eastern Standard Time</p>
+				</td>
+				<td>
+					<p>EST</p>
+				</td>
+			</tr>
+			<tr class="t1Row" style="height: 15.0pt;">
+				<td height="20">
+					<p>(UTC-05:00) Indiana (East)</p>
+				</td>
+				<td>
+					<p>US Eastern Standard Time</p>
+				</td>
+				<td>
+					<p>UEST</p>
+				</td>
+			</tr>
+			<tr class="t2Row" style="height: 15.0pt;">
+				<td height="20">
+					<p>(UTC-06:00) Central America</p>
+				</td>
+				<td>
+					<p>Central America Standard Time</p>
+				</td>
+				<td>
+					<p>CAST</p>
+				</td>
+			</tr>
+			<tr class="t1Row" style="height: 15.0pt;">
+				<td height="20">
+					<p>(UTC-06:00) Central Time (US &amp; Canada)</p>
+				</td>
+				<td>
+					<p>Central Standard Time</p>
+				</td>
+				<td>
+					<p>CST</p>
+				</td>
+			</tr>
+			<tr class="t2Row" style="height: 15.0pt;">
+				<td height="20">
+					<p>(UTC-06:00) Guadalajara, Mexico City, Monterrey</p>
+				</td>
+				<td>
+					<p>Central Standard Time (Mexico)</p>
+				</td>
+				<td>
+					<p>CST</p>
+				</td>
+			</tr>
+			<tr class="t1Row" style="height: 15.0pt;">
+				<td height="20">
+					<p>(UTC-06:00) Saskatchewan</p>
+				</td>
+				<td>
+					<p>Canada Central Standard Time</p>
+				</td>
+				<td>
+					<p>CCST</p>
+				</td>
+			</tr>
+			<tr class="t2Row" style="height: 15.0pt;">
+				<td height="20">
+					<p>(UTC-07:00) Arizona</p>
+				</td>
+				<td>
+					<p>US Mountain Standard Time</p>
+				</td>
+				<td>
+					<p>UMST</p>
+				</td>
+			</tr>
+			<tr class="t1Row" style="height: 15.0pt;">
+				<td height="20">
+					<p>(UTC-07:00) Chihuahua, La Paz, Mazatlan</p>
+				</td>
+				<td>
+					<p>Mountain Standard Time (Mexico)</p>
+				</td>
+				<td>
+					<p>MST</p>
+				</td>
+			</tr>
+			<tr class="t2Row" style="height: 15.0pt;">
+				<td height="20">
+					<p>(UTC-07:00) Mountain Time (US &amp; Canada)</p>
+				</td>
+				<td>
+					<p>Mountain Standard Time</p>
+				</td>
+				<td>
+					<p>MST</p>
+				</td>
+			</tr>
+			<tr class="t1Row" style="height: 15.0pt;">
+				<td height="20">
+					<p>(UTC-08:00) Baja California</p>
+				</td>
+				<td>
+					<p>Pacific Standard Time (Mexico)</p>
+				</td>
+				<td>
+					<p>PST</p>
+				</td>
+			</tr>
+			<tr class="t2Row" style="height: 15.0pt;">
+				<td height="20">
+					<p>(UTC-08:00) Pacific Time (US &amp; Canada)</p>
+				</td>
+				<td>
+					<p>Pacific Standard Time</p>
+				</td>
+				<td>
+					<p>PST</p>
+				</td>
+			</tr>
+			<tr class="t1Row" style="height: 15.0pt;">
+				<td height="20">
+					<p>(UTC-09:00) Alaska</p>
+				</td>
+				<td>
+					<p>Alaskan Standard Time</p>
+				</td>
+				<td>
+					<p>AST</p>
+				</td>
+			</tr>
+			<tr class="t2Row" style="height: 15.0pt;">
+				<td height="20">
+					<p>(UTC-10:00) Hawaii</p>
+				</td>
+				<td>
+					<p>Hawaiian Standard Time</p>
+				</td>
+				<td>
+					<p>HST</p>
+				</td>
+			</tr>
+			<tr class="t1Row" style="height: 15.0pt;">
+				<td height="20">
+					<p>(UTC-11:00) Coordinated Universal Time-11</p>
+				</td>
+				<td>
+					<p>UTC-11</p>
+				</td>
+				<td>
+					<p>U</p>
+				</td>
+			</tr>
+			<tr class="t2Row" style="height: 15.0pt;">
+				<td height="20">
+					<p>(UTC-12:00) International Date Line West</p>
+				</td>
+				<td>
+					<p>Dateline Standard Time</p>
+				</td>
+				<td>
+					<p>DST</p>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</html>
